@@ -641,5 +641,4 @@ def transform_func(x):
 	return F.pad(x.unsqueeze(0), (4,4,4,4),mode='reflect').squeeze()
 if __name__ == '__main__':
 	step()
-	time.sleep(60)
 	main()
