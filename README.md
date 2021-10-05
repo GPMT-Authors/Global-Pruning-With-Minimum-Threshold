@@ -65,7 +65,7 @@ These few models are the checkpoints of pruned Resnet-50 on ImageNet models by G
 | GP + 0.05% MT  | 80           | 76.81         | [Pruned Model](https://drive.google.com/file/d/1PkB80RD46vfsuWMxenEbjp5Jq6QXoV3M/view?usp=sharing) |
 | GP             | 90           | 75.44         | [Pruned Model](https://drive.google.com/file/d/12V1SHhCxyG6QjrVEP-mT3iB33cLzBWNh/view?usp=sharing) |
 | GP + 0.05% MT  | 90           | 75.42         | [Pruned Model](https://drive.google.com/file/d/1mTMHvF_-VNHNbpxFEU5mnfmdTNQoIhck/view?usp=sharing) |
-| GP             | 95           | 71.63         | [Pruned Model](https://drive.google.com/file/d/1spUS0U2SgB_Dtc0k6pK7wQ24GUD4EnZt/view?usp=sharing) |
-| GP + 0.0075% MT| 95           | 71.23         | [Pruned Model](https://drive.google.com/file/d/18bOtvzAq7sKwraGCWuQfwVweqd0kECS0/view?usp=sharing) |
-| GP             | 98           | 62.12         | [Pruned Model](https://drive.google.com/file/d/1K9326WN4xh4x_QoNqLo-T8AlQzBYn8zX/view?usp=sharing) |
-| GP + 0.0050% MT| 98           | 61.01         | [Pruned Model](https://drive.google.com/file/d/1kOaR07Rgw11jkhr4JZdn5shqVOiG3GT-/view?usp=sharing) |
+| GP             | 95.30        | 71.63         | [Pruned Model](https://drive.google.com/file/d/1spUS0U2SgB_Dtc0k6pK7wQ24GUD4EnZt/view?usp=sharing) |
+| GP + 0.005% MT | 95.30        | 71.55         | [Pruned Model](https://drive.google.com/file/d/1LySjDLF8ixmFQUS7NXC0BeN4Ss9AHOFV/view?usp=sharing) |
+| GP             | 98.05        | 62.12         | [Pruned Model](https://drive.google.com/file/d/1K9326WN4xh4x_QoNqLo-T8AlQzBYn8zX/view?usp=sharing) |
+| GP + 0.005% MT | 98.05        | 61.83         | [Pruned Model](https://drive.google.com/file/d/1T-_V8sWDJ4WU54n4qNL2V6OtFWZa0JTk/view?usp=sharing) |
