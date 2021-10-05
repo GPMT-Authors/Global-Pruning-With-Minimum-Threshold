@@ -48,12 +48,11 @@ Note that you should change the base model's location and the dataset's location
 
 ### Dense Models:
 
-These models are the base models that we used for our experiments. The model definition used are in the model_list.py file or the original model definition made by its authors. 
+This model is the base model that we used for our experiments.
 
 | Architecture | Parameters | Sparsity (%) | Top-1 Acc (%) | Model Links |
 | ------------ | :--------: | :----------: | :-----------: | :---------: |
 | Resnet-50        | 25.50M  | 0.00        | 77.04         | [Base Model](https://drive.google.com/file/d/1I7dxZD87-Ftav-BvIxqCWCWGWqYZFVK2/view?usp=sharing) |
-| WideResNet-28-8  | 23.34M  | 0.00        | 96.04         | [Base Model](https://drive.google.com/file/d/1ot3xmR-J4fY5NESeJ503RqSTXu59W467/view?usp=sharing) |
 
 ### GP and GP+MT Resnet-50 Pruned Models:
 
