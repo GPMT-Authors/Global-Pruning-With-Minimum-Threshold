@@ -13,9 +13,9 @@ To run the global magnitude pruning without minimum threshold (MT), run the prun
 Note - you should change the base model's location and the dataset's location in the the prune_GP.py and prune_GPMT.py files before running them. 
 
 To run the files
-'''
+```
 hh
-'''
+```
 
 ### Dense Models:
 
