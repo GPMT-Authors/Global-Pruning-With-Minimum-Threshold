@@ -1,4 +1,4 @@
-# Global Magnitude Pruning With Minimum Threshold MT (GPMT)
+# Global Magnitude Pruning With Minimum Threshold (GPMT)
 This GitHub repository is the official repository for the paper "Global Magnitude Pruning With Minimum Threshold Is All We Need". 
 
 ## Set Up
