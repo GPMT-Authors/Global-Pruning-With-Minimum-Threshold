@@ -8,7 +8,7 @@ This GitHub repository is the official repository for the paper "Global Magnitud
 3. Create a folder which has LabelSmoothing.py, prune_GP.py (or prune_GPMT.py), model_list.py, and the base model. 
 
 ## Training with GP and GPMT
-To run the global magnitude pruning without minimum threshold (MT), run the prune_GP.py file. To run the global magnitude pruning with MT, run the prune_GPMT.py file. Finetuning code is also included in both the files itself.
+To run the global magnitude pruning without minimum threshold (MT), run the prune_GP.py file. To run the global magnitude pruning with MT, run the prune_GPMT.py file. Finetuning code is included in both the files itself.
 
 Note - you should change the base model's location and the dataset's location in the the prune_GP.py and prune_GPMT.py files before running them. 
 
