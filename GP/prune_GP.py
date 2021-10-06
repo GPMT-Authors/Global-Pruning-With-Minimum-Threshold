@@ -134,7 +134,7 @@ def step():
 	elif args.data_set == 'cifar10' and args.arch == 'mobilenet_v2_cifar10':
 		pre_acc = float(args.resume[-8:-3])	
 	if os.path.isfile(args.resume):
-		checkpoint = torch.load(args.resume)
+		checkpoint = torch.load(args.resume, map_location='cuda:0')
 		model.load_state_dict(checkpoint)
 		print("=> loaded checkpoint '{}'".format(args.resume))
 	else:
@@ -267,7 +267,7 @@ def main_worker(gpu, ngpus_per_node, args):
 	if not args.resume:
 		if os.path.isfile(args.model):
 			print("=> loading model '{}'".format(args.model))
-			checkpoint = torch.load(args.model)
+			checkpoint = torch.load(args.model, map_location='cuda:0')
 			model.load_state_dict(checkpoint['state_dict'])
 			args.start_epoch = 0
 			if args.data_set == 'imagenet' and args.arch == 'resnet50_imagenet':
@@ -308,7 +308,7 @@ def main_worker(gpu, ngpus_per_node, args):
 	if args.resume:
 		if os.path.isfile(args.resume):
 			print("=> loading checkpoint '{}'".format(args.resume))
-			checkpoint = torch.load(args.resume)
+			checkpoint = torch.load(args.resume, map_location='cuda:0')
 			args.start_epoch = checkpoint['epoch']
 			best_acc1 = checkpoint['best_acc1']
 			if args.gpu is not None:
