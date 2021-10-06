@@ -1,4 +1,4 @@
-# Global-Magnitude-Pruning-With-Minimum-Threshold-MT-
+# Global Magnitude Pruning With Minimum Threshold MT
 This GitHub repository is the official repository for the paper "Global Magnitude Pruning With Minimum Threshold Is All We Need". 
 
 ## Set Up
@@ -8,55 +8,21 @@ This GitHub repository is the official repository for the paper "Global Magnitud
 3. Create a folder which has LabelSmoothing.py, prune_GP.py (or prune_GPMT.py), model_list.py, and the base model. 
 
 ## Training with GP and GPMT
-To run the global magnitude pruning without minimum threshold (MT), run the prune_GP.py file. To run the global magnitude pruning with MT, run the prune_GPMT.py file. 
+To run the global magnitude pruning without minimum threshold (MT), run the prune_GP.py file. To run the global magnitude pruning with MT, run the prune_GPMT.py file. Finetuning code is also included in both the files itself.
 
-Each run of the prune_MT.py file will create:
-
-0. prune_log.csv
-1. prunedmodel.pth.tar 
-2. weight_mask.npy
-3. a csv file compiling the logs of each training epoch
-4. best model checkpoints after each epoch
-
-Each run of the prune_GPMT.py file will create:
-
-0. prune_log.csv (prune logs without MT)
-1. layer_sparsities.csv
-2. prune_refined_log.csv (prune logs with MT)
-3. prunedmodel.pth.tar (pruned base model)
-4. weight_mask.npy
-5. a csv file compiling the logs of each training epoch
-6. best model checkpoints after each epoch
-
-Which by default, all of them will be created in the same directory as the code files. 
-
-The arguments that you could change are:
-
-0. --epochs (for number of total epochs to train)
-1. --batch-size (total batch size for all GPUs)
-2. --lr (initial learning rate)
-3. --momentum
-4. --weight-decay
-5. --smoothing
-6. --sparsity
-7. --min-threshold (MT, for prune_GPMT.py only)
-
-Note that you should change the base model's location and the dataset's location by yourself by editing the prune_GP.py and prune_GPMT.py files before running them. Also, if you want to change the scheduler, you should change them by yourself. The formula that we used are: 
-
-0. cosine scheduler : 0.5 * (1 + np.cos(np.pi * epoch / total_epoch)) * initial_lr
-1. linear scheduler : initial_lr - epoch / total_epoch * initial_lr
+Note - you should change the base model's location and the dataset's location in the the prune_GP.py and prune_GPMT.py files before running them. 
 
 ### Dense Models:
 
-This model is the base model that we used for our experiments.
+This model is the base model that we used for our ResNet-50 on ImageNet experiments.
 
 | Architecture | Parameters | Sparsity (%) | Top-1 Acc (%) | Model Links |
 | ------------ | :--------: | :----------: | :-----------: | :---------: |
 | Resnet-50        | 25.50M  | 0.00        | 77.04         | [Base Model](https://drive.google.com/file/d/1I7dxZD87-Ftav-BvIxqCWCWGWqYZFVK2/view?usp=sharing) |
 
-### GP and GP+MT Resnet-50 Pruned Models:
+### GP and GP+MT Pruned Models:
 
-These few models are the checkpoints of pruned Resnet-50 on ImageNet models by GP and GP+MT.
+These models are the checkpoints of pruned Resnet-50 on ImageNet models by GP and GP+MT.
 
 | Pruning Method | Sparsity (%) | Top-1 Acc (%) | Model Links |
 | -------------- | :----------: | :-----------: | :---------: |
